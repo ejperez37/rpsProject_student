@@ -13,11 +13,8 @@ function getComputerSelection() {
   }
 
 function playRound(playerSelection, computerSelection) {
-    // Get playerSelection via prompt
     playerSelection = prompt("pick your fighter! rock, paper, scissors, SHOOT!", "you gotta shoot man");
-    // Make sure playerSelection is lowercase
     playerSelection = playerSelection.toLowerCase();
-    // Get computerSelection via getComputerSelection()
     computerSelection = getComputerSelection();
     // Compare playerSelection and computerSelection to determine the winner
     switch (playerSelection) {
@@ -71,7 +68,7 @@ function game() {
           console.log("That's not a valid choice! Try again.");
 }
     }
-// After the loop ends, log the final scores and declare the winner
+// AFTER the loop ends, log the final scores and declare the winner
     if (playerScore > computerScore) {
       console.log("You win the game!");
     }
